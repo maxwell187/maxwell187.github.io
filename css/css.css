@@ -1,0 +1,197 @@
+@import url('fonts.googleapis.com/css?family=Anonymous+Pro');
+*{
+  border-sizing: border-box;
+}
+
+body {
+  background: #000;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.members {
+  width: 9.3em;
+  overflow-y: auto;
+  border-style: solid;
+  padding-top: 10px;
+  border-width: 1px;
+  border-color: #fff;
+  height: 15em;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(0,0,0,.5);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: .5s all;
+  -webkit-transition-delay: 5s;
+  -moz-transition: .5s all;
+  -moz-transition-delay: 5s;
+  -ms-transition: .5s all;
+  -ms-transition-delay: 5s;
+  -o-transition: .5s all;
+  -o-transition-delay: 5s;
+  transition: .5s all;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 0.78);
+  width:130px;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.container1 {
+  position:relative;
+  z-index: 3;
+  width: 100%;
+  margin-top: 34%;
+  font-family: "Anonymous Pro" sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+#cnt2 {
+  display: none;
+}
+
+#mainpart1 {
+  display: none;
+}
+
+#mainpart2 {
+  display: none;
+}
+
+#mainpart3 {
+  display: none;
+  margin-top: 1em;
+}
+
+.container2 {
+  position:relative;
+  z-index: 3;
+  width: 100%;
+  margin-top: 8%;
+  font-family: "Anonymous Pro" sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.video-container {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+h1 {
+  margin: 20px 0px;
+  font-weight: 100;
+  font-size: 4.5em;
+  color: #fff;
+}
+
+h2 {
+  margin: 20px 0px;
+  font-weight: 100;
+  font-size: 3.2em;
+  color: #fff;
+}
+
+h3 {
+  margin: 20px 0px;
+  font-weight: 100;
+  font-size: 2.7em;
+  color: #fff;
+}
+
+#vid { 
+  opacity: 0.5;
+}
+
+h4 {
+  margin: 20px 0px;
+  font-weight: 100;
+  font-size: 2em;
+  color: #fff;
+}
+
+.fadein{
+    -webkit-animation: 1.5s ease 0s normal forwards 1 fadein;
+    animation: 1.5s ease 0s normal forwards 1 fadein;
+}
+
+.fadeout{
+    -webkit-animation: 1s ease 0s normal forwards 1 fadeout;
+    animation: 1s ease 0s normal forwards 1 fadeout;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@keyframes fadeout{
+    0% { opacity:1; }
+    66% { opacity:0; }
+    100% { opacity:0; }
+}
+
+@-webkit-keyframes fadeout{
+    0% { opacity:1; }
+    66% { opacity:0; }
+    100% { opacity:0; }
+}
