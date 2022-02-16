@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link href="custom.css" rel="stylesheet">
+</head>
+<body>
+
+<h1 id="willkommenichwerdmirheuterichtigeinenreintrinken"></h1>
+<img src="dasisses.gif" width="450" height="278" alt="Das isses doch nich">
+
+<script>
+	gerDays = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
+
+	window.onload = () => {
+		const curDay = gerDays[new Date().getDay()];
+
+		document.title = "Heute ist " + curDay + ", und ich werd mir richtig einen reintrinken";
+		document.getElementById('willkommenichwerdmirheuterichtigeinenreintrinken').innerText = "Heute ist " + curDay + ", und ich werd mir richtig einen reintrinken";
+	}
+</script>
+
+
+
+</body>
+</html>
