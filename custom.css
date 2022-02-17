@@ -9,3 +9,7 @@ body {
 	flex-direction: column;
 	height: 75vh;
 }
+
+#rotefarbegutefarbe {
+	color: #ff00;
+}
