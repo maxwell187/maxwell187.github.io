@@ -17,7 +17,11 @@
 		const curDay = gerDays[new Date().getDay()];
 
 		document.title = "Heute ist " + curDay + ", und ich werd mir richtig einen reintrinken";
-		document.getElementById('willkommenichwerdmirheuterichtigeinenreintrinken').innerText = "Heute ist " + curDay + ", und ich werd mir richtig einen reintrinken";
+		
+		if(curDay != "Freitag" || curDay != "Samstag") 
+			document.getElementById('willkommenichwerdmirheuterichtigeinenreintrinken').innerText = "Heute ist " + curDay + ", und ich werd mir richtig einen reintrinken";
+		else
+			document.getElementById('willkommenichwerdmirheuterichtigeinenreintrinken').innerHTML = "Heute ist <span id='rotefarbegutefarbe'>" + curDay + "</span>, und ich werd mir richtig einen reintrinken";
 	}
 </script>
 
