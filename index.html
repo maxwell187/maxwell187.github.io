@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>Ich werd mir heute richtig einen reintrinken!</title>
 	<link href="custom.css" rel="stylesheet">
 <meta name="google-site-verification" content="kRBxW-Ax6Ch_BlKQOLnIA6Uu4EMGJtgZMLl8MQW9iyY" />
 </head>
@@ -16,8 +16,6 @@
 
 	window.onload = () => {
 		const curDay = gerDays[new Date().getDay()];
-
-		document.title = "Heute ist " + curDay + ", und ich werd mir richtig einen reintrinken";
 		
 		if(curDay != "Freitag" || curDay != "Samstag") {
 			document.getElementById('willkommenichwerdmirheuterichtigeinenreintrinken').innerText = "Heute ist " + curDay + ", und ich werd mir richtig einen reintrinken";
